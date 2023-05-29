@@ -7,13 +7,14 @@ pipeline {
                 echo 'Hello World'
             }
         }
-        stage('build'){
-            steps{
+        stage('build') {
+            steps {
                 echo 'start building..'
-                dir(https://github.com/Smitha-Aruldhas/calculator){
-                   bat '''npm install'''
+                dir('calculator') {
+                    bat 'npm install'
                 }
             }
         }
     }
 }
+
