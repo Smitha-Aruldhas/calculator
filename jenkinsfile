@@ -10,7 +10,7 @@ pipeline {
         stage('build') {
             steps {
                 echo 'start building..'
-                dir('C:\ProgramData\Jenkins\.jenkins\workspace\sample') {
+                dir('C:/ProgramData/Jenkins/.jenkins/workspace/sample') {
                     bat 'npm install'
                 }
             }
